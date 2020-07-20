@@ -25,11 +25,11 @@ class BSTNode:
                     if self.left.value == target:
                         return True
                 else:
-                    self.left.contains(target)
+                    return self.left.contains(target)
             else:                
                 if not self.right:
                     return False                
                 if self.right.value == target:
                     return True
                 else:
-                    self.right.contains(target)
+                    return self.right.contains(target)
